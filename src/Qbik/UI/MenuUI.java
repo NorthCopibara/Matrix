@@ -32,6 +32,13 @@ public class MenuUI extends JFrame
         container.add(bStart);
     }
 
+    private void InitMatrix(int x, int y)
+    {
+        MatrixParameters param = new MatrixParameters(x, y);
+        Main.CreateMatrix(param);
+        Main.getMenu().setVisible(false);
+    }
+
     class ButtonEventListener implements ActionListener
     {
         public void actionPerformed(ActionEvent e)
@@ -45,11 +52,7 @@ public class MenuUI extends JFrame
                 if(x > 71 || y > 71) //Ограничения по памяти heap
                     return;
 
-                MatrixParameters param = new MatrixParameters(x, y);
-
-                Main.CreateMatrix(param);
-
-                Main.menu.setVisible(false);
+                InitMatrix(x, y);
             }
         }
     }

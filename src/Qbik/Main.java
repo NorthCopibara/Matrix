@@ -8,8 +8,7 @@ import Qbik.UI.MenuUI;
 public class Main
 {
     private static MatrixManager manager;
-
-    public static MenuUI menu;
+    private static MenuUI menu;
 
     public static void main(String[] args)
     {
@@ -20,6 +19,11 @@ public class Main
     public static MatrixManager getManager()
     {
         return manager;
+    }
+
+    public static MenuUI getMenu()
+    {
+        return menu;
     }
 
     public static void CreateMatrix(MatrixParameters param)

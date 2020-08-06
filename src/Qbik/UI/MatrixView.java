@@ -41,15 +41,6 @@ public class MatrixView extends JFrame
         scrollPane.setBounds(100,100,510,510);
 
         add(scrollPane);
-
-        /*
-        JPanel menu = new JPanel();
-        menu.setBounds(100,100,500,500);
-        JButton bBack = new JButton("Back");
-        bBack.setSize(50,50);
-        menu.add(bBack);
-        add(menu);
-        */
     }
 
     public List<JButton> getButtons()
